@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+struct Time {
+	int hour;
+	int minute;
+	int sec;
+	int TotalSec(){
+		return 3600 * hour + 60 * minute + sec;
+
+	}
+};
+
+int main()
+{
+	Time t = { 1, 12, 23 };
+	cout << t.TotalSec();
+}
